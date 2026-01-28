@@ -24,8 +24,8 @@ import lombok.Setter;
 @Entity
 @Table(name = "users", // avoid reserved word
        uniqueConstraints = {
-           @javax.persistence.UniqueConstraint(columnNames = "username"),
-           @javax.persistence.UniqueConstraint(columnNames = "email")
+           @jakarta.persistence.UniqueConstraint(columnNames = "username"),
+           @jakarta.persistence.UniqueConstraint(columnNames = "email")
        })
 public class User {
 
